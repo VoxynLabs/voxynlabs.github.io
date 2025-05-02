@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="We’re cooking up something awesome behind the scenes. Hang tight — the future is almost here." />
+  
   <title>Coming Soon | Voxyn Labs</title>
-  <link rel="icon" type="image/png" href="assets/logo-3.png">
-  <style>
-    body {
-      background: linear-gradient(-45deg, #9902ff, #8e7cc3, #1377d2, #9902ff);
-      background-size: 400% 400%;
-      animation: gradientShift 20s ease infinite;
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      overflow: hidden;
-    }
+  
+  <meta property="og:title" content="Coming Soon | Voxyn Labs" />
+  <meta property="og:description" content="We’re cooking up something awesome behind the scenes. Hang tight — the future is almost here." />
+  <meta property="og:image" content="https://voxynlabs.github.io/assets/logo-3.png" />
+  <meta property="og:url" content="https://voxynlabs.github.io/" />
+  <meta property="og:type" content="website" />
 
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Coming Soon | Voxyn Labs" />
+  <meta name="twitter:description" content="We’re cooking up something awesome behind the scenes. Hang tight — the future is almost here." />
+  <meta name="twitter:image" content="https://voxynlabs.github.io/assets/logo-3.png" />
+  <meta name="twitter:site" content="@your-handle" />
+  
+  <link rel="icon" type="image/png" href="assets/logo-3.png" />
+  <link rel="apple-touch-icon" href="assets/logo-3.png" />
+  <link rel="shortcut icon" href="assets/logo-3.png" type="image/png" />
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
     @keyframes gradientShift {
       0% {
         background-position: 0% 50%;
@@ -33,35 +38,33 @@
         background-position: 0% 50%;
       }
     }
-
+    
+    .gradient-bg {
+      background: linear-gradient(-45deg, #9902ff, #8e7cc3, #1377d2, #9902ff);
+      background-size: 400% 400%;
+      animation: gradientShift 20s ease infinite;
+    }
+    
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin: 0.5em 0 2em;
-      max-width: 500px;
-    }
-
-    .logo {
-      font-size: 2em;
-      font-weight: bold;
-      margin-bottom: 1em;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8em;
-      opacity: 0.6;
+      padding-bottom: 5px;
     }
   </style>
 </head>
-<body>
-  <h1>Coming Soon</h1>
-  <p>We’re cooking up something awesome behind the scenes. Hang tight — the future is almost here.</p>
-  <div class="footer">2025, Voxyn Labs</div>
+<body class="gradient-bg text-white font-sans flex flex-col items-center justify-center min-h-screen text-center overflow-hidden relative px-4">
+  <h1 class="text-4xl md:text-5xl font-bold mb-2">Coming Soon</h1>
+  <p class="text-base md:text-lg max-w-xl mb-10">
+    We’re cooking up something awesome behind the scenes. <br class="hidden md:inline" />
+    Hang tight — the future is almost here.
+  </p>
+
+  <div class="absolute bottom-10 text-sm md:text-base opacity-60">2025, Voxyn Labs</div>
+
+  <div class="absolute bottom-2 flex space-x-4 text-lg md:text-xl">
+    <a href="https://discord.gg/voxynlabs" target="_blank" aria-label="Discord" class="hover:scale-110 transition-transform"><i class="fab fa-discord" aria-hidden="true"></i></a>
+    <a href="" target="_blank" aria-label="X (Twitter)" class="hover:scale-110 transition-transform"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+    <a href="" target="_blank" aria-label="Instagram" class="hover:scale-110 transition-transform"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="" target="_blank" aria-label="Bluesky" class="hover:scale-110 transition-transform"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
+    <a href="https://github.com/voxynlabs" target="_blank" aria-label="Github" class="hover:scale-110 transition-transform"><i class="fab fa-github" aria-hidden="true"></i></a>
+  </div>
 </body>
 </html>
