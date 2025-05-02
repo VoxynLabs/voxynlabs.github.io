@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Voxyn Labs</title>
-    <style>
-      body {
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(-45deg, #9902ff, #8e7cc3, #1377d2, #9902ff);
-        background-size: 400% 400%;
-        animation: gradientShift 20s ease infinite;
-        color: white;
-        font-family: sans-serif;
-        text-align: center;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coming Soon | Voxyn Labs</title>
+  <link rel="icon" type="image/png" href="assets/logo-3.png">
+  <style>
+    body {
+      background: linear-gradient(-45deg, #9902ff, #8e7cc3, #1377d2, #9902ff);
+      background-size: 400% 400%;
+      animation: gradientShift 20s ease infinite;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
       }
-      @keyframes gradientShift {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
+      50% {
+        background-position: 100% 50%;
       }
-    </style>
-  </head>
-  <body>
-    hey, our website isn't done! why are you here
-  </body>
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 0.5em 0 2em;
+      max-width: 500px;
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Coming Soon</h1>
+  <p>We’re cooking up something awesome behind the scenes. Hang tight — the future is almost here.</p>
+  <div class="footer">2025, Voxyn Labs</div>
+</body>
 </html>
