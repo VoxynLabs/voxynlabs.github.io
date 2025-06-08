@@ -71,18 +71,6 @@
             <div class="mt-6 text-xs text-zinc-600 font-mono pt-4 border-t border-zinc-800/50">
               <span class="text-zinc-500">const</span> <span class="text-indigo-400">developer</span> <span class="text-zinc-500">=</span> <span class="text-fuchsia-400">new</span> <span class="text-violet-400">Developer</span><span class="text-zinc-500">();</span>
             </div>
-
-            <div class="mt-4 flex gap-4">
-              <a href="https://github.com/VoxynLabs" class="text-zinc-500 hover:text-indigo-400 transition-colors" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://discord.gg/72kZvSPz39" class="text-zinc-500 hover:text-indigo-400 transition-colors" aria-label="Discord">
-                <i class="fab fa-discord"></i>
-              </a>
-              <a href="mailto:contact@voxynlabs.com" class="text-zinc-500 hover:text-indigo-400 transition-colors" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
           </div>
         </div>
       {/each}
