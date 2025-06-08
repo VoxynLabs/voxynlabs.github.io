@@ -1,48 +1,4 @@
 <script>
-  import { onMount } from "svelte";
-
-  let loaded = false;
-  let typewriterText = "";
-  const fullText = "Building developer-friendly tools for everyone";
-  let currentIndex = 0;
-  let typingInterval;
-
-  onMount(() => {
-    loaded = true;
-
-    typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        typewriterText = fullText.substring(0, currentIndex);
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-        setTimeout(() => {
-          currentIndex = 0;
-          startTyping();
-        }, 3000);
-      }
-    }, 100);
-
-    return () => {
-      clearInterval(typingInterval);
-    };
-  });
-
-  function startTyping() {
-    typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        typewriterText = fullText.substring(0, currentIndex);
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-        setTimeout(() => {
-          currentIndex = 0;
-          startTyping();
-        }, 3000);
-      }
-    }, 100);
-  }
-
   function escapeHTML(code) {
     return code
       .replace(/&/g, "&amp;")
@@ -107,7 +63,7 @@ export default createSafeEnvironment();`);
   <div class="z-10 container mx-auto px-6 py-16 mt-16 max-w-7xl">
     <div class="max-w-3xl mx-auto text-center">
       <div class="relative inline-block">
-        <span class="inline-block animate-fade-in opacity-0 {loaded ? 'opacity-100' : ''} transition-opacity duration-1000 delay-300">
+        <span class="inline-block animate-fade-in transition-opacity duration-1000 delay-300">
           <span class="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-indigo-500/10 text-indigo-400 ring-1 ring-inset ring-indigo-500/30 mb-6 font-['Fira_Code']">
             <span class="relative flex h-2 w-2 mr-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
@@ -118,20 +74,20 @@ export default createSafeEnvironment();`);
         </span>
       </div>
       
-      <h1 class="text-6xl sm:text-7xl lg:text-8xl font-bold mt-6 font-['Fira_Code'] bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400 animate-fade-in opacity-0 {loaded ? 'opacity-100' : ''} transition-opacity duration-1000 leading-tight tracking-tight">
+      <h1 class="text-6xl sm:text-7xl lg:text-8xl font-bold mt-6 font-['Fira_Code'] bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400 animate-fade-in transition-opacity duration-1000 leading-tight tracking-tight">
         Voxyn<span class="text-white/70">.</span>Labs
       </h1>
       
       <div class="h-16 mt-8">
-        <p class="text-xl text-zinc-300 font-['Fira_Code'] animate-fade-in opacity-0 {loaded ? 'opacity-100' : ''} transition-opacity duration-1000 delay-150">
+        <p class="text-xl text-zinc-300 font-['Fira_Code'] animate-fade-in transition-opacity duration-1000 delay-150">
           <span class="inline-block text-indigo-400">$ </span>
-          <span class="inline-block border-r-2 border-indigo-400 pr-1 animate-pulse">{typewriterText}</span>
+          <span class="inline-block border-r-2 border-indigo-400 pr-1 animate-pulse">Building developer-friendly tools for everyone</span>
         </p>
       </div>
       
-      <div class="mt-12 flex flex-wrap justify-center gap-4 animate-fade-in opacity-0 {loaded ? 'opacity-100' : ''} transition-opacity duration-1000 delay-300">
+      <div class="mt-12 flex flex-wrap justify-center gap-4 animate-fade-in transition-opacity duration-1000 delay-300">
         <a href="https://github.com/VoxynLabs" target="_blank" rel="noopener noreferrer" 
-           class="rounded-lg bg-indigo-600 px-5 py-3 text-base font-['Fira_Code'] font-medium text-white shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all transform hover:-translate-y-0.5 border border-indigo-500/30">
+           class="rounded-lg bg-indigo-600 px-5 py-3 text-base font-['Fira_Code'] font-medium text-white shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all transform hover:-translate-y-0.5 border border-indigo-500/30">
           <i class="fab fa-github mr-2"></i> git clone github:VoxynLabs
         </a>
         <a href="https://discord.gg/72kZvSPz39" target="_blank" rel="noopener noreferrer" 
