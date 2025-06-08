@@ -29,7 +29,7 @@ export default defineConfig({
         comments: false,
       },
     },
-    sourcemap: false,
+    sourcemap: true,
     cssCodeSplit: false,
     cssMinify: true,
     emptyOutDir: true,
