@@ -19,6 +19,7 @@
     "@types/node": "^22.15.30",
     "gh-pages": "^6.3.0",
     "svelte-preprocess": "^6.0.3",
+    "terser": "^5.41.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
