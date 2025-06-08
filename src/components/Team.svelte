@@ -7,7 +7,8 @@
       bg: "from-indigo-500 to-violet-500",
       about: "I'm a Python and HTML developer. Learn more about me at my personal website!",
       github: "coolboy67yt",
-      website: "https://turtldev.online"
+      website: "https://turtldev.online",
+      discord: "https://discord.gg/hHXAwpkDfb"
     },
     {
       name: "Grandalfwise",
@@ -26,7 +27,7 @@
       github: "thefunrayy"
     },
     {
-      name: "Half-Life 9mm Semi-auto. Pistol",
+      name: "aero272",
       role: "Front-End Development & Discord Moderator",
       img: "/img/half-life.png",
       bg: "from-pink-500 to-rose-500",
@@ -105,6 +106,11 @@
                 {#if member.website}
                   <a href={member.website} target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-fuchsia-400 p-2 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition">
                     <i class="fa-solid fa-globe"></i>
+                  </a>
+                {/if}
+                {#if member.discord}
+                  <a href={`${member.discord}`} target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-indigo-400 p-2 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition">
+                    <i class="fa-brands fa-discord"></i>
                   </a>
                 {/if}
               </div>
