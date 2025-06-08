@@ -1,1 +1,2 @@
 function t(t,e){if(t instanceof RegExp)return{keys:!1,pattern:t};var n,s,i,r,p=[],f="",u=t.split("/");for(u[0]||u.shift();i=u.shift();)"*"===(n=i[0])?(p.push("wild"),f+="/(.*)"):":"===n?(s=i.indexOf("?",1),r=i.indexOf(".",1),p.push(i.substring(1,~s?s:~r?r:i.length)),f+=~s&&!~r?"(?:/([^/]+?))?":"/([^/]+?)",~r&&(f+=(~s?"?":"")+"\\"+i.substring(r))):f+="/"+i;return{keys:p,pattern:new RegExp("^"+f+"/?$","i")}}export{t as p};
+//# sourceMappingURL=deps-CEGkI7Ug.js.map
