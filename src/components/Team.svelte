@@ -2,7 +2,7 @@
   export let team = [
     {
       name: "Turtledevv",
-      role: "Lead Developer & Founder",
+      role: "Lead Developer, Founder, & Owner",
       img: "/img/turtledevv.png",
       bg: "from-indigo-500 to-violet-500",
       about: "I'm a Python and HTML developer. Learn more about me at my personal website!",
