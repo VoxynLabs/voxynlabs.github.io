@@ -64,10 +64,10 @@
 
   <div class="relative z-10 max-w-6xl mx-auto">
     <div class="text-center mb-20">
-      <span class="inline-block px-3 py-1 text-xs font-mono tracking-wider rounded-full bg-indigo-500/10 text-indigo-400 ring-1 ring-inset ring-indigo-500/30 mb-4">
+      <span class="inline-block px-3 py-1 text-xs tracking-wider rounded-full bg-indigo-500/10 text-indigo-400 ring-1 ring-inset ring-indigo-500/30 mb-4">
         <span class="mr-1">&lt;</span>VoxynLabs<span class="ml-1">/&gt;</span>
       </span>
-      <h2 class="text-5xl font-bold bg-gradient-to-r from-indigo-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent font-mono pb-2">
+      <h2 class="text-5xl font-bold bg-gradient-to-r from-indigo-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent pb-2">
         Our Team
       </h2>
       <p class="text-zinc-400 max-w-2xl mx-auto mt-4">
@@ -87,12 +87,12 @@
                 <h3 class="font-bold text-white group-hover:text-violet-400 transition-colors truncate max-w-[180px]" title={member.name}>
                   {member.name}
                 </h3>
-                <p class="text-zinc-400 text-xs font-mono mt-1 truncate max-w-[180px]" title={member.role}>{member.role}</p>
+                <p class="text-zinc-400 text-xs font-[fira_code] mt-1 truncate max-w-[180px]" title={member.role}>{member.role}</p>
               </div>
             </div>
 
             {#if member.about}
-              <div class="mt-4 p-3 bg-zinc-800/20 rounded-lg border border-zinc-800/30 text-zinc-300 text-sm font-mono leading-relaxed">
+              <div class="mt-4 p-3 bg-zinc-800/20 rounded-lg border border-zinc-800/30 text-zinc-300 text-sm font-[fira_code] leading-relaxed">
                 {member.about}
               </div>
             {/if}

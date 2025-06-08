@@ -7,7 +7,7 @@
   import Footer from "../components/Footer.svelte";
 </script>
 
-<main class="min-h-screen bg-zinc-950 text-zinc-100 font-[Fira Code]">
+<main class="min-h-screen bg-zinc-950 text-zinc-100 font-[fira_code]">
   <Navbar />
   <Hero />
   <About />

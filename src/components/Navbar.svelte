@@ -33,15 +33,15 @@
         
         <div class="hidden md:flex items-center space-x-8">
           <a href="#about" class="font-['Fira_Code'] text-zinc-300 hover:text-white transition-colors relative group">
-            <span class="font-mono">&lt;</span>About<span class="font-mono">/&gt;</span>
+            <span class="font-[fira_code]">&lt;</span>About<span class="font-[fira_code]">/&gt;</span>
             <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
           <a href="#team" class="font-['Fira_Code'] text-zinc-300 hover:text-white transition-colors relative group">
-            <span class="font-mono">&lt;</span>Team<span class="font-mono">/&gt;</span>
+            <span class="font-[fira_code]">&lt;</span>Team<span class="font-[fira_code]">/&gt;</span>
             <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
           <a href="#links" class="font-['Fira_Code'] text-zinc-300 hover:text-white transition-colors relative group">
-            <span class="font-mono">&lt;</span>Links<span class="font-mono">/&gt;</span>
+            <span class="font-[fira_code]">&lt;</span>Links<span class="font-[fira_code]">/&gt;</span>
             <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
@@ -58,13 +58,13 @@
       <div class="md:hidden bg-zinc-900 border-t border-zinc-800/30 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 py-3 space-y-1">
           <a href="#about" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors font-['Fira_Code']">
-            <span class="font-mono">&lt;</span>About<span class="font-mono">/&gt;</span>
+            <span class="font-[fira_code]">&lt;</span>About<span class="font-[fira_code]">/&gt;</span>
           </a>
           <a href="#team" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors font-['Fira_Code']">
-            <span class="font-mono">&lt;</span>Team<span class="font-mono">/&gt;</span>
+            <span class="font-[fira_code]">&lt;</span>Team<span class="font-[fira_code]">/&gt;</span>
           </a>
           <a href="#links" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors font-['Fira_Code']">
-            <span class="font-mono">&lt;</span>Links<span class="font-mono">/&gt;</span>
+            <span class="font-[fira_code]">&lt;</span>Links<span class="font-[fira_code]">/&gt;</span>
           </a>
         </div>
       </div>
