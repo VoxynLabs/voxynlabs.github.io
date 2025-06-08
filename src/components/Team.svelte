@@ -3,31 +3,31 @@
     {
       name: "Turtledevv",
       role: "Lead Developer & Founder",
-      emoji: "🐢",
+      img: "/img/turtledevv.png",
       bg: "from-indigo-500 to-violet-500"
     },
     {
       name: "Grandalfwise",
       role: "Full-Stack Developer",
-      emoji: "🧙",
+      img: "/img/grandalfwise.png",
       bg: "from-violet-500 to-fuchsia-500"
     },
     {
       name: "TheFunRayy",
       role: "Discord & Social Media Manager",
-      emoji: "😎",
+      img: "/img/thefunrayy.png",
       bg: "from-fuchsia-500 to-pink-500"
     },
     {
       name: "Half-Life 9mm Semi-auto. Pistol",
       role: "Front-End Development & Discord Moderator",
-      emoji: "🔫",
+      img: "/img/half-life.png",
       bg: "from-pink-500 to-rose-500"
     },
     {
       name: "maybeizen",
       role: "Full-Stack Developer",
-      emoji: "💻",
+      img: "/img/maybeizen.png",
       bg: "from-rose-500 to-indigo-500"
     }
   ];
@@ -56,12 +56,13 @@
       {#each team as member}
         <div class="group">
           <div class="p-6 bg-zinc-900/50 border border-zinc-800/50 backdrop-blur-sm rounded-xl transition-all duration-300 hover:border-zinc-700/50 hover:bg-zinc-900/70 hover:shadow-lg hover:shadow-black/20 relative overflow-hidden h-full">
-
             <div class="absolute inset-0 bg-gradient-to-br {member.bg} opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-300"></div>
             
-            <div class="relative flex items-start gap-4">              
-              <div class="flex-1 pt-1">
-                <h3 class="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:via-violet-400 group-hover:to-fuchsia-400 transition-colors duration-300">
+            <div class="relative flex items-center gap-4">
+              <img src={member.img} alt={member.name} class="w-16 h-16 rounded-2xl" />
+              
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white group-hover:text-violet-500 transition-colors duration-300">
                   {member.name}
                 </h3>
                 <p class="text-zinc-400 text-sm mt-1 font-mono">{member.role}</p>
