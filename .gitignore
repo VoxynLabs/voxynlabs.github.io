@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.production
+.env.local
+
+.vscode
+.idea
+.DS_Store
+dist
+build
+bin
+out
