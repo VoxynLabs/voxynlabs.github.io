@@ -7,7 +7,9 @@ export default defineConfig({
   base: "/",
   plugins: [svelte(), tailwind()],
   build: {
-    sourcemap: true,
+    sourcemap: false,
+    outDir: "dist",
+    cssMinify: "lightningcss",
   },
 });
 
