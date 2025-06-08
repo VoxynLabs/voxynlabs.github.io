@@ -97,19 +97,19 @@
             {/if}
 
             <div class="mt-auto">
-              <div class="flex items-center gap-3 mt-6">
+              <div class="flex items-center justify-center gap-3 mt-6">
                 {#if member.github}
-                  <a href={`https://github.com/${member.github}`} target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-indigo-400 p-2 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition">
+                  <a href={`https://github.com/${member.github}`} target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-zinc-400 hover:text-indigo-400 h-8 w-8 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition-all">
                     <i class="fa-brands fa-github"></i>
                   </a>
                 {/if}
                 {#if member.website}
-                  <a href={member.website} target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-fuchsia-400 p-2 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition">
+                  <a href={member.website} target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-zinc-400 hover:text-fuchsia-400 h-8 w-8 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition-all">
                     <i class="fa-solid fa-globe"></i>
                   </a>
                 {/if}
                 {#if member.discord}
-                  <a href={`${member.discord}`} target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-indigo-400 p-2 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition">
+                  <a href={`${member.discord}`} target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-zinc-400 hover:text-indigo-400 h-8 w-8 rounded-full bg-zinc-800/30 hover:bg-zinc-800/60 transition-all">
                     <i class="fa-brands fa-discord"></i>
                   </a>
                 {/if}
