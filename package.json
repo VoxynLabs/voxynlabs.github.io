@@ -1,6 +1,6 @@
 {
-  "name": "voxynlabs.github.io/website",
-  "version": "1.0.0",
+  "name": "voxynlabs-website",
+  "version": "v0.1.0-beta",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -14,6 +14,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
+    "@sveltejs/enhanced-img": "^0.6.0",
     "@types/node": "^22.15.30",
     "svelte-preprocess": "^6.0.3",
     "typescript": "^5.8.3",

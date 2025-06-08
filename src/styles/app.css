@@ -1,1 +1,42 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  @apply bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100;
+  font-family: "Fira Code", monospace;
+}
+
+@layer utilities {
+  .btn {
+    @apply px-4 py-2 rounded-lg transition-colors;
+  }
+
+  .btn-primary {
+    @apply rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all;
+  }
+
+  .btn-secondary {
+    @apply rounded-lg bg-zinc-800 px-4 py-2.5 text-sm font-semibold text-white hover:bg-zinc-700 transition-all;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-indigo-400 to-violet-500 bg-clip-text text-transparent;
+  }
+
+  .nav-link {
+    @apply text-zinc-300 hover:text-white transition-colors;
+  }
+
+  .card {
+    @apply rounded-xl border border-zinc-800 bg-zinc-900/50 p-6;
+  }
+
+  .card-hover {
+    @apply hover:bg-zinc-800/50 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10;
+  }
+}
