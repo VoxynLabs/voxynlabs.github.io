@@ -41,7 +41,7 @@
             <h3 class="text-sm font-semibold text-indigo-400 tracking-wider uppercase font-['Fira_Code']">Projects</h3>
             <ul role="list" class="mt-4 space-y-3">
               <li>
-                <a href="https://github.com/VoxynLabs" target="_blank" rel="noopener noreferrer" class="text-sm text-zinc-500 hover:text-indigo-400 transition-colors font-['Fira_Code']">GitHub Repositories</a>
+                <a href="https://github.com/VoxynLabs" target="_blank" rel="noopener noreferrer" class="text-sm text-zinc-500 hover:text-indigo-400 transition-colors font-['Fira_Code']">GitHub</a>
               </li>
               <li>
                 <a href="https://discord.gg/72kZvSPz39" target="_blank" rel="noopener noreferrer" class="text-sm text-zinc-500 hover:text-indigo-400 transition-colors font-['Fira_Code']">Discord Bots</a>
