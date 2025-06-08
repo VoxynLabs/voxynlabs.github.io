@@ -24,7 +24,8 @@
       role: "Discord & Social Media Manager",
       img: "/img/thefunrayy.png",
       bg: "from-fuchsia-500 to-pink-500",
-      github: "thefunrayy"
+      github: "thefunrayy",
+      about: "Im just some person i guess"
     },
     {
       name: "aero272",
