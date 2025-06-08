@@ -1,6 +1,6 @@
 {
   "name": "voxynlabs-website",
-  "version": "v0.1.0-beta",
+  "version": "v0.2.0-beta",
   "description": "",
   "main": "index.js",
   "type": "module",
