@@ -4,6 +4,10 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts,tsx}", "./index.html"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Figtree", "system-ui", "sans-serif"],
+        mono: ["Fira Code", "monospace"],
+      },
       animation: {
         "gradient-x": "gradient-x 15s ease infinite",
         "fade-in": "fade-in 0.5s ease-out forwards",

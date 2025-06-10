@@ -1,5 +1,8 @@
 <script>
   import { onMount } from "svelte";
+  import Button from './Button.svelte';
+  import NavLink from './NavLink.svelte';
+  import Badge from './Badge.svelte';
   
   let menuOpen = false;
   let scrolled = false;
@@ -28,22 +31,25 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex justify-between items-center h-16">
         <div class="flex-shrink-0 flex items-center">
-          <span class="text-2xl font-bold font-['Fira_Code'] bg-gradient-to-r from-indigo-400 to-violet-500 bg-clip-text text-transparent">&lt;Voxyn <span class="text-white/80">/</span>&gt;</span>
+          <span class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-violet-500 bg-clip-text text-transparent">
+            Voxyn Labs
+          </span>
         </div>
         
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#about" class="font-['Fira_Code'] text-zinc-300 hover:text-white transition-colors relative group">
-            <span class="font-[fira_code]">&lt;</span>About<span class="font-[fira_code]">/&gt;</span>
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#team" class="font-['Fira_Code'] text-zinc-300 hover:text-white transition-colors relative group">
-            <span class="font-[fira_code]">&lt;</span>Team<span class="font-[fira_code]">/&gt;</span>
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#links" class="font-['Fira_Code'] text-zinc-300 hover:text-white transition-colors relative group">
-            <span class="font-[fira_code]">&lt;</span>Links<span class="font-[fira_code]">/&gt;</span>
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
+          <NavLink href="#about" label="About" />
+          <NavLink href="#team" label="Team" />
+          <NavLink href="#links" label="Links" />
+          
+          <Button 
+            href="https://github.com/VoxynLabs" 
+            variant="ghost" 
+            size="sm" 
+            icon="fa-brands fa-github"
+            className="ml-4"
+          >
+            GitHub
+          </Button>
         </div>
         
         <div class="md:hidden flex items-center">
@@ -57,18 +63,28 @@
     {#if menuOpen}
       <div class="md:hidden bg-zinc-900 border-t border-zinc-800/30 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 py-3 space-y-1">
-          <a href="#about" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors font-['Fira_Code']">
-            <span class="font-[fira_code]">&lt;</span>About<span class="font-[fira_code]">/&gt;</span>
+          <a href="#about" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors">
+            About
           </a>
-          <a href="#team" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors font-['Fira_Code']">
-            <span class="font-[fira_code]">&lt;</span>Team<span class="font-[fira_code]">/&gt;</span>
+          <a href="#team" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors">
+            Team
           </a>
-          <a href="#links" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors font-['Fira_Code']">
-            <span class="font-[fira_code]">&lt;</span>Links<span class="font-[fira_code]">/&gt;</span>
+          <a href="#links" class="block px-3 py-2 rounded-md text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors">
+            Links
           </a>
+          <div class="pt-2 mt-2 border-t border-zinc-800/30">
+            <Button 
+              href="https://github.com/VoxynLabs" 
+              variant="ghost" 
+              size="sm" 
+              icon="fa-brands fa-github"
+              className="w-full justify-start"
+            >
+              GitHub
+            </Button>
+          </div>
         </div>
       </div>
     {/if}
   </div>
-
 </nav> 
