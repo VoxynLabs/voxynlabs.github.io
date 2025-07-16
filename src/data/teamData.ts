@@ -35,23 +35,5 @@ export const teamData = [
     github: "aguywithapassion",
     about:
       "I'm a learning developer who mostly works with HTML and C#. I also do some of the PR for Voxyn Labs",
-  },
-  {
-    name: "maybeizen",
-    role: "Full-Stack Developer",
-    img: "/img/maybeizen.png",
-    bg: "from-rose-500 to-indigo-500",
-    about: "Typescript and GoLang developer. I also watch anime.",
-    github: "maybeizen",
-    website: "https://maybeizen.space",
-  },
-  {
-    name: "owen",
-    role: "Full-Stack Developer & Owner",
-    img: "/img/owen.png",
-    bg: "from-indigo-500 to-violet-500",
-    about: `"GO TO LLM.VIN" - owen 2025`,
-    github: "owenqwenstarsky",
-    website: "https://llm.vin",
-  },
+  }
 ];
